@@ -304,6 +304,17 @@ a:focus {
 figure {
   margin: 0;
 }
+
+div {
+
+}
+.lightbox {
+  display: block;
+  overflow: auto;
+  position: relative;
+  /*box-shadow: 0px 5px 5px -5px #232323;
+  /*background-color: black; */
+}
 img {
   vertical-align: middle;
 }
@@ -311,6 +322,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.img-slide {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
 }
 .img-rounded {
   border-radius: 6px;

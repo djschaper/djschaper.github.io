@@ -38,6 +38,11 @@
         <a class="navbar-brand" href="#home">Derek Schaper</a> </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="smoothScroll">Home</a></li>
+          <li> <a href="#about" class="smoothScroll"> About</a></li>
+          <li> <a href="#skills" class="smoothScroll"> Skills</a></li>
+          <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+          <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -47,16 +52,456 @@
   
 <!-- ==== HEADERWRAP ==== -->
 <div id="headerwrap" name="home">
-  <header class="clearfix"> <i class="fa fa-cogs icon"></i>
+  <header class="clearfix">
 	<h1>Derek J. Schaper</h1>
-    <p>Website in progress...</p>
+    <p>creative · motivated · inspired</p>
+    <a href="#portfolio" class="smoothScroll btn btn-lg">See My Work</a> </header>
 </div>
-<!-- /headerwrap -->
+<!-- /headerwrap --> 
+
+<!-- ==== ABOUT ==== -->
+<div id="about" name="about">
+  <div class="container">
+    <div class="row white">
+      <h2 class="centered">ABOUT ME</h2>
+      <hr>
+      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/Profile3.png" align=""> </div>
+      <div class="col-md-6">
+        <h3>Who I am</h3>
+        <p>I was born to create. Whether it be carpentry, sketching, filming, music, designing, or programming, I love to see ideas brought to life. This is what led me into engineering, and it is through engineering that I hope not only to make things, but make a difference.<br/><br/>
+		   As the years have gone on, I find myself drawn into the world of robotics. I see a great potential for robotic technology to be integrated into society, especially technology that directly interacts with humans in the workplace, in public, and at home. Currently, I am exploring the exciting world of advanced bionics such as neural-linked prostheses and exoskeletons.</p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== SKILLS ==== -->
+<div id="skills" name="skills">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">MY SKILLS</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">I am currently in the Mechatronics option of UBC's Engineering Physics program. Numerous physics labs, robotics projects, and co-op/intern positions have equipped me with a skillset well suited to any mechatronic system. I have learned to adapt quickly to any application, whether it be mechanical, electrical, or software related.</p>
+      </div>
+      <div class="col-lg-4 callout centered"> <i class="fa fa-code fa-3x"></i>
+        <h3>Software</h3>
+        <p>Proficient in functional and object oriented programming, working in multiple languages such as: C, C++, C#, MATLAB, Java, JavaScript, PHP, and HTML. Soon low-level programming like assembly will be added to my repertoire.</p>
+      </div>
+      <div class="col-lg-4 callout centered"> <i class="fa fa-calculator fa-3x"></i>
+        <h3>Physics</h3>
+        <p>Engineering Physics emphasizes physics and mathematics, and so I have a solid foundation in classical, thermo and fluid mechanics, as well as multi-variable, vector, and complex calculus. More quantum physics is also on the horizon.</p>
+      </div>
+      <div class="col-lg-4 callout centered"> <i class="fa fa-wrench fa-3x"></i>
+        <h3>Mechanics</h3>
+        <p>Through design and construction, I translate the theoretical physics to working mechanics. Past experience in carpentry and robot building gives me an intuition for creating mechanisms and making them practical, efficient and elegant.</p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== PORTFOLIO ==== -->
+<div id="portfolio" name="portfolio">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">MY PORTFOLIO</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">Explore some of my past projects.</p>
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="container">
+      <div class="row"> 
+        
+        <!-- PORTFOLIO IMAGE 1 -->
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/dining-table.png" alt="">
+              <figcaption>
+                <h5>Dining Table</h5>
+                <a data-toggle="modal" href="#diningModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        <div class="modal fade" id="diningModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Dining Table</h4>
+              </div>
+              <div class="modal-body">
+				<div id="diningSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/dining/1.png"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/2.png"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/3.png"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/5.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/6.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/7.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/8.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/dining/9.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="diningBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<div style="display:none"><i id="playBtn" class="fa fa-play"></i><i id="pauseBtn" class="fa fa-pause"></i></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("diningSlides", "diningBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>I was contracted to design and construct this Douglas fir table in my grade 11 year. My client gave me some inspirational pictures and fancied the table having a "stacked" appearance similar to an inuksuk. I sketched up some ideas, got approval to my client, and proceeded to draft up the plans and 3D model. Once the final design was approved, I began fashioning the table from fine Douglas fir wood stock. The end result is pictured above in my very pleased client's house.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+        
+        <!-- Chess Table -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/chess-table.png" alt="">
+              <figcaption>
+                <h5>Chess Table</h5>
+                <a data-toggle="modal" href="#chessModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+		
+		<div class="modal fade" id="chessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Chess Table</h4>
+              </div>
+              <div class="modal-body">
+				<div id="chessSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/chess/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/chess/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/chess/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/chess/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/chess/5.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="chessBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("chessSlides", "chessBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>This chess table was my first carpentry project at the start of highschool. When designing it, I wanted to create the illusion of the chess board floating in air, and thus the double glass top. Building this table is when I truly fell in love with carpentry. Besides chess, this table turned out to be great for most any board game, and we still use it to this day.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+        
+        <!-- PORTFOLIO IMAGE 3 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/tv-cabinet.png" alt="">
+              <figcaption>
+                <h5>TV Cabinet</h5>
+                <a data-toggle="modal" href="#tvModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+      </div>
+      <!-- /row -->
+	  <div class="modal fade" id="tvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">TV Cabinet</h4>
+              </div>
+              <div class="modal-body">
+				<div id="tvSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/tvcab/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/5.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/6.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/7.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/8.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/9.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/10.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/11.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/12.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/13.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/14.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/15.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/16.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/17.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/tvcab/18.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="tvBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("tvSlides", "tvBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>My second major carpentry project was this TV cabinet. In particular, I wanted a solution to the growing collection of Wii games, controllers, and accessories my younger brother and I were amassing. The final product features a games drawer, a controller drawer with removable organizer, a console/media centre shelf, and an accessories drawer. Years later, the only thing that has changed is the TV getting bigger.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+      
+      <!-- PORTFOLIO IMAGE 4 -->
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/284-rover.png" alt="">
+              <figcaption>
+                <h5>Electromagnetic Rover</h5>
+                <a data-toggle="modal" href="#roverModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+		<div class="modal fade" id="roverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Electromagnetic Rover</h4>
+              </div>
+              <div class="modal-body">
+				<div id="roverSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/rover/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/5.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/6.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/rover/7.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="roverBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("roverSlides", "roverBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>This little rover utilized an array of solenoids to detect and follow the magnetic field generated by an oscillating current in a wire track. According to the UBC course, it had to interpret signals along the track to know when to either make a turn, or stay straight when it came to split junctions. Lesson learned: always have a discharging resistor with your capacitor.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+        
+        <!-- PORTFOLIO IMAGE 5 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/253-clark.png" alt="">
+              <figcaption>
+                <h5>Clark Robot</h5>
+                <a data-toggle="modal" href="#clarkModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+		<div class="modal fade" id="clarkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Clark Robot</h4>
+              </div>
+              <div class="modal-body">
+				<div id="clarkSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/clark/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/5.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/6.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/7.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/8.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/9.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/10.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/11.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/12.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/13.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/14.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/15.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/16.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/17.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/18.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/19.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/20.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/21.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/22.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/23.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/24.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/25.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/clark/26.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="clarkBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("clarkSlides", "clarkBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>This UBC Engineering Physics project course is one of the reasons I selected the program. Provided only with the microcontroller affectionately named TINAH, we were tasked with building a robot that would autonomously play Indiana Jones retrieving ancient artifacts from a temple. Once the artifacts were retrieved, our robot would have to either zipline to safety, or brave the boulder that would follow it down the hill on the way out. With the exception of tires and motors, our group of 4 engineering students had to build this thing from scratch. Needless to say, designing, prototyping, machining, coding, wiring, and troubleshooting our team's robot (Clark) was simultaneously exhilarating and stressful beyond belief. Our design boasted a retrieval crane, modified Ackermann steering, and a self-hoisting tower (up to 7kg). Come competition day, we made it to quarter finals before being eliminated by another excellent group. This is the project that convinced me robotics is the way to go.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+        
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/rift-integration.png" alt="">
+              <figcaption>
+                <h5>Oculus Rift Integration</h5>
+                <a id="riftDeets" data-toggle="modal" href="#oculusModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+		<div class="modal fade" id="oculusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Oculus Rift Integration</h4>
+              </div>
+              <div class="modal-body">
+				<div id="oculusSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/oculus/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/oculus/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/oculus/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/oculus/4.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="oculusBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("oculusSlides", "oculusBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>In conjunction with robotics, I find virtual and augmented reality to be fascinating and awesome. I joined the UBC engineering club Open Robotics to have access to an Oculus Rift which I intended to create a surrogate experience with. The idea is that as the human controller's head moves, the remote robot's head moves in sync, and a live stream from two cameras in the robot head would fill the Oculus display, putting the human controller in the robot's shoes. I got so far as to integrate the motion mimicry before work and other projects took priority, but this is still on my todo list as soon as I get some free time. Check out the Open Robotics project page <a href="http://openrobotics.ca/projects/project/?id=34" target="_blank">here</a>.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+		
+		<!-- PORTFOLIO IMAGE 7 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/orbit-satellite.png" alt="">
+              <figcaption>
+                <h5>UBC Orbit Satellite</h5>
+                <a data-toggle="modal" href="#orbitModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+		<div class="modal fade" id="orbitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">UBC Orbit Satellite</h4>
+              </div>
+              <div class="modal-body">
+				<div id="orbitSlides" class="lightbox">
+					<img class="img-slide" src="assets/img/portfolio/orbit/1.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/orbit/2.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/orbit/3.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/orbit/4.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/orbit/5.jpg"/>
+					<img class="img-slide" src="assets/img/portfolio/orbit/6.jpg"/>
+				</div>
+				<div style="text-align:center"><button type="button" class="btn btn-default" id="orbitBtn" style="background:none"><i class="fa fa-play"></i></button></div>
+				<script src="assets/js/slideShow.js"></script>
+				<script type="text/javascript">window.addEventListener('cache', slideShow("orbitSlides", "orbitBtn", "playBtn", "pauseBtn"), false);</script>
+				<br />
+                <p>In my first year at UBC, I joined the UBC Orbit engineering club which designs and builds cube satellites as part of the Canadian Satellite Design Challenge. I was involved in the structural/mechanical sub-team and worked on designing and testing a de-orbiting balloon. Our design was to demonstrate the feasibility of de-orbiting a satellite come its end-of-life, rather than leaving it dead in orbit as space junk hazardous to other satellites, stations, and spacecraft.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+		
+        <!-- /col --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /row --> 
+  </div>
+</div>
+<!-- /container --> 
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" name="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">CONTACT ME</h2>
+      <hr>
+      <div class="col-md-8 col-lg-offset-2 centered"> <a href="mailto:derek.j.schaper@gmail.com" target="_top"><i class="fa fa-envelope-o fa-2x"></i>
+        <p>derek.j.schaper@gmail.com</a></p>
+      </div>
+	  <div class="col-lg-8 col-lg-offset-2 centered">
+        <p>If you found one of the projects above interesting and have questions,<br /> or you would simply like to get in touch,<br /> feel free to send me an email.</p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container -->
 
 <div id="footerwrap">
   <div class="container">
     <div class="row">
-      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Derek Schaper. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
+      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2016 Derek Schaper. Original template by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
     </div>
   </div>
 </div>

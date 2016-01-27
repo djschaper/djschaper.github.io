@@ -483,7 +483,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
 }
-.no-touch .mask figure:hover img, .mask figure:focus img, .mask figure.cs-hover img {
+.mask figure:hover img, .mask figure:focus img, .mask figure.cs-hover img, .mask figure.cs-focus img {
 	-webkit-transform: translateY(-30px);
 	-moz-transform: translateY(-30px);
 	-ms-transform: translateY(-30px);
@@ -503,7 +503,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
-.no-touch .mask figure:hover figcaption, .mask figure.cs-hover figcaption {
+.mask figure:hover figcaption, .mask figure:focus figcaption, .mask figure.cs-hover figcaption, .mask figure.cs-focus figcaption {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);

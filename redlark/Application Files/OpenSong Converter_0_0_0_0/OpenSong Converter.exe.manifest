@@ -10,22 +10,22 @@
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
-          requestedExecutionLevel node with one of the following.
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
-         compatibility then delete the requestedExecutionLevel node.
-    -->
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tQR1o368HHRTaBmDpFjFIaLkrqZZqst0w/oMn59J6YY=</dsig:DigestValue>
+        <dsig:DigestValue>68wahHnBoGmzpIDGK4n91veUjM27voSciap2MgZj03Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,4 +72,21 @@
       <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=DEREKROG\Derek" issuerKeyHash="b97d686ea1c737f16c7aff510dae5050c499f190" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>L6aCQvmPgP6ExOy5NSet5BICZzfbjIj9sazdn199QWA=</DigestValue></Reference></SignedInfo><SignatureValue>gRjg4X6pDg+Bz6/PlYz11BwQt1hpw5ADeYCNEpFXy63UsP4t32BOddcy8wmV698fIqLk75P/EbHPkYvw9AAeOR4/8wI5P+HuP1Wp6SXUk7tIT0H+a32BU/w5vFFlqAB7L8pBpb2TaWu6br7boq8o2An47wm49YBj97Vmzk0FIg0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="60417d5f9fddacb1fd888cdb37670212e4ad2735b9ecc484fe808ff94282a62f" Description="" Url=""><as:assemblyIdentity name="OpenSong Converter.exe" version="0.0.0.0" publicKeyToken="fa6f7331850e6e4c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DEREKROG\Derek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>25k2FYfz3D+/ixbLm1+B2W2H1v7NUsAR7ImemI0An/I=</DigestValue></Reference></SignedInfo><SignatureValue>RBsRDDpvK4KJRS6JQaKu5xMTpgYxUClo2FI/0AqNiZTQjUOsJkLd2yUK/x8Xkg81jBZhrN83mfL0rlOHCGjh2qpZrs4lsm0/vLUl8f7/8OhCQNQhpmRJLSLIUe9CnIAqm6x+xXh2tdctxIQ9bnTwFnJn4zUp/Gu165pStQnOzsQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQV4D+ycMa1pdONOV14IvgUzANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARABFAFIARQBLAFIATwBHAFwARABlAHIAZQBrMB4XDTE3MDkzMDE5MjAwM1oXDTE4MTAwMTAxMjAwM1owJzElMCMGA1UEAx4cAEQARQBSAEUASwBSAE8ARwBcAEQAZQByAGUAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBG54uU8jpQKbKikLFsXQwlUBj8Bp2ZRfqkXK/zaf6VDzrnrZUc7Fgluzn3PQ16LcMYVNAzIF98SkuFQ/Q83oFSBbEEA5oP+iogNqCq3Vb6kicIyGn6L6EAOwizS+KKthgrnWOgx/3KG6wYohh+TrZdtinP5/UtYru8dyn2Tgpwbw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DEREKROG\Derek" issuerKeyHash="b97d686ea1c737f16c7aff510dae5050c499f190" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qk0wbg7qZvexIuK2PGVSB7t1ZEHFGWu7geerQo+QCfE=</DigestValue></Reference></SignedInfo><SignatureValue>UExClATyUnKx+jzf2ZfHy7HhfxEqI8bUNiph5d1yGU5jOqz77fGyxSDM/EPr1/irm9gKYOajGERMzvC4h3AY61jTY1z2YrP/oSEIawUEYXRy5OUrxI50+GdWiCKQvH/T4AQmepjAPewUmcrjU7cbUeZKprPYRVB1DifsF7dTRzE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f109908f42abe781bb6b19c5416475bb0752653cb6e222b1f766ea0e6e304daa" Description="" Url=""><as:assemblyIdentity name="OpenSong Converter.exe" version="0.0.0.0" publicKeyToken="fa6f7331850e6e4c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DEREKROG\Derek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1AC0g1WosCVMeiKoGA4fBxHiu2pNKZasK5JQXmDuTkg=</DigestValue></Reference></SignedInfo><SignatureValue>lIRlSzDIaXHqDWZAOI6TinuXNlM1ww/VYBo/OgyxJ7PYBHy9F1Nt5RDKvak+0+osbsep/2+SM7AMc4NBeWe1ZxUO7cyvyQFF7pcAsZuxWBa0gCBFm91NxPBXOGvnZWSvqpZsnjG7Q1CqEdqrEXYpU+XxqphAncuDYDlMB3iVNUg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQV4D+ycMa1pdONOV14IvgUzANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARABFAFIARQBLAFIATwBHAFwARABlAHIAZQBrMB4XDTE3MDkzMDE5MjAwM1oXDTE4MTAwMTAxMjAwM1owJzElMCMGA1UEAx4cAEQARQBSAEUASwBSAE8ARwBcAEQAZQByAGUAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2GSWEJ0AYFDCN8Pzyl60YgTl45en2LkPQGv5TrXgxbzwDcKDw4WzKV4OGuTu7LMVWuToqKMm2UMrF/uBnN3ZpjKJW/4UfT/UAl3dWV86Zt1rGEeoiXzBmdzVyPBUXNp9OW5Uk0tm330y3s8Qr5au5pO+5/RHl/n8hleA4xEHC18CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBG54uU8jpQKbKikLFsXQwlUBj8Bp2ZRfqkXK/zaf6VDzrnrZUc7Fgluzn3PQ16LcMYVNAzIF98SkuFQ/Q83oFSBbEEA5oP+iogNqCq3Vb6kicIyGn6L6EAOwizS+KKthgrnWOgx/3KG6wYohh+TrZdtinP5/UtYru8dyn2Tgpwbw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
